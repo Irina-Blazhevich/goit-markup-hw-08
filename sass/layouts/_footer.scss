@@ -1,0 +1,15 @@
+.footer {
+  background: $footer-background-color;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-section {
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
+  @include for-size(desktop) {
+    display: flex;
+  }
+}

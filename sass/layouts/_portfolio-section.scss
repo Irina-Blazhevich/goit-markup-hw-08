@@ -1,0 +1,36 @@
+.portfolio-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 60px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.portfolio-thumb {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 370px;
+    height: 70px;
+    bottom: 0px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+
+.portfolio-list-header {
+  position: absolute;
+  bottom: 27px;
+
+  text-align: center;
+  color: $secondary-text-color;
+}

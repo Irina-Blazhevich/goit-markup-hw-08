@@ -1,0 +1,9 @@
+.filter-list {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  justify-content: center;
+
+  &-item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

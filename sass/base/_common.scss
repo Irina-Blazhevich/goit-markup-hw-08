@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+
+  outline: 1px solid tomato;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: $main-text-color;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
+}
+
+.flexbox {
+  display: flex;
+}
+
+.list-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-header {
+  // padding-top: 94px;
+  // padding-bottom: 50px;
+
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin: 0px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+}
+
+.footer-text {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
