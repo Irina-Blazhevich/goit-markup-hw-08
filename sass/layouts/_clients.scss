@@ -1,26 +1,35 @@
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 60px;
-  justify-content: space-between;
 
-  @include for-size(desktop) {
-    flex-wrap: nowrap;
-    padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
   }
+  
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+
 }
 
 .clients-list-item {
-  width: calc((100% - 30px) / 2);
-  margin-bottom: 30px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+   width: calc((100% - 30px) / 2);
+   margin-right: 30px;
+   margin-bottom: 30px; 
+  
+
+  &:nth-child(2n) {
+    margin-right: 0px;
+  }
 
   &:nth-last-child(-n + 2) {
     margin-bottom: 0px;
   }
+}
 
-  text-align: center;
-
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
@@ -61,11 +70,15 @@
     border-radius: 4px;
   }
 
-  @include for-size(tablet-landscape) {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 226px;
   }
 
-  @include for-size(desktop) {
+  @media screen and (min-width: $desktop) {
     width: 170px;
   }
 }

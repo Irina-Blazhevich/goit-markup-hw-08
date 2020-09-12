@@ -6,23 +6,15 @@
 }
 
 .team-list {
-  padding-bottom: 60px;
 
-  @media screen and (max-width: 1199px) and (min-width: 768px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
-  // @include for-size(tablet-landscape) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: space-between;
-  // }
-  // @include for-size(desktop) {
-  //   display: flex;
-  //   padding-bottom: 94px;
-  // }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .team-list-item {
@@ -33,36 +25,38 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  // @media screen and (max-width: 767px) {
-  //   &:not(:last-child) {
-  //     margin-bottom: 30px;
-  //   }
-  // }
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
 
-  @media screen and (max-width: 1199px) and (min-width: 768px) {
-    width: calc((100% - 30px) / 2);
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
     }
   }
 
-  // @include for-size(tablet-landscape) {
-  //   width: calc((100% - 30px) / 2);
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
 
-  //   &:nth-last-child(-n + 2) {
-  //     margin-bottom: 0px;
-  //   }
-  // }
+    &:nth-child(2n) {
+        margin-right: 0px;
+    }
 
-  // @include for-size(desktop) {
-  //   width: calc((100% - 90px) / 4);
-  //   margin-bottom: 0px;
-  //   padding-bottom: 30px;
+    &:nth-last-child(-n+2) {
+        margin-bottom: 0px;
+    }
+  }
 
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  // }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+        margin-right: 0px;
+    }
+}
 }
 
 .team-list-header {

@@ -1,6 +1,13 @@
 .contacts-list {
-  display: flex;
-  margin-left: auto;
+  
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto; 
+  }
 }
 
 .contacts-list > .contacts-list-item {
@@ -8,6 +15,13 @@
 
   &:not(:last-child) {
     margin-right: 30px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -18,10 +32,19 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    font-size: 12px;
+    letter-spacing: 0.02em;
+  } 
 }
 
 .contacts-icon {
   fill: currentColor;
   vertical-align: middle;
   margin-right: 10px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
 }

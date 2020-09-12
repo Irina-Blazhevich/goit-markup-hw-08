@@ -1,6 +1,11 @@
+.mobile-hidden {
+  @media screen and (max-width: 1199px) {
+   display: none !important; 
+  }
+}
+
 .portfolio-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .portfolio-list-item {
