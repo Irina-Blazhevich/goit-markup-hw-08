@@ -1,12 +1,21 @@
 .main-nav {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
   
+  
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
 }
 
 .menu-list {

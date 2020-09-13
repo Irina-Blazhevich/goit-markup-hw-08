@@ -59,6 +59,30 @@
 }
 }
 
+.team-member-photo {
+  background-size: cover;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+
+        max-width: 450px;
+        height: auto;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+    }
+}
+
 .team-list-header {
   margin-top: 30px;
   margin-bottom: 10px;
