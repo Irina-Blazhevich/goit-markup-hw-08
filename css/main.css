@@ -504,7 +504,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-btn {
     display: block;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -512,7 +511,16 @@ body {
 
 @media screen and (min-width: 1200px) {
   .subscribe-btn {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
     margin-top: 0px;
     margin-left: 8px;
     margin-right: 0px;
@@ -745,6 +753,7 @@ body {
             transform: translateY(0);
     opacity: 1;
     pointer-events: initial;
+    z-index: 999;
   }
 }
 
@@ -1313,6 +1322,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-input {
+    display: block;
     width: 450px;
   }
 }

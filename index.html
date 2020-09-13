@@ -180,11 +180,16 @@
           <ul class="list portfolio-list">
             <li class="portfolio-list-item">
               <div class="portfolio-thumb">
-                <img
-                  class="img"
-                  src="./images/desktop-apps.jpg"
-                  alt="Десктопные приложения"
-                />
+                <picture class="img">
+                  <source srcset="./images/action1/action1.webp 1x, ./images/action1/action1-2x.webp 2x" type="image/webp">
+                  <source srcset="./images/action1/action1.jpg 1x, ./images/action1/action1-2x.jpg 2x">
+                    <img
+                    class="img"
+                    src="./images/desktop-apps.jpg"
+                    alt="Десктопные приложения"
+                  />
+                </picture>
+                
                 <h2 class="list-header portfolio-list-header">
                   Десктопные приложения
                 </h2>
@@ -192,11 +197,16 @@
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-thumb">
-                <img
+                <picture class="img">
+                  <source srcset="./images/action2/action2.webp 1x, ./images/action2/action2-2x.webp 2x" type="image/webp">
+                  <source srcset="./images/action2/action2.jpg 1x, ./images/action2/action2-2x.jpg 2x">
+                  <img
                   class="img"
                   src="./images/mobile-apps.jpg"
                   alt="Мобильные приложения"
-                />
+                  />
+                </picture>
+                
                 <h2 class="list-header portfolio-list-header">
                   Мобильные приложения
                 </h2>
@@ -204,11 +214,16 @@
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-thumb">
-                <img
-                  class="img"
-                  src="./images/design-solutions.jpg"
-                  alt="Дизайнерские решения"
-                />
+                <picture class="img">
+                  <source srcset="./images/action3/action3.webp 1x, ./images/action3/action3-2x.webp 2x" type="image/webp">
+                  <source srcset="./images/action3/action3.jpg 1x, ./images/action3/action3-2x.jpg 2x">
+                    <img
+                    class="img"
+                    src="./images/design-solutions.jpg"
+                    alt="Дизайнерские решения"
+                  />
+                </picture>
+                
                 <h2 class="list-header portfolio-list-header">
                   Дизайнерские решения
                 </h2>
@@ -224,9 +239,16 @@
           <h2 class="section-header">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list-item">
-              <picture>
-                <source srcset="./images/desktop/igor-desktop@1x.jpg 1x, ./images/desktop/igor-desktop@2x.jpg 2x" 
-                media="(min-width: 1200px)">
+              <picture class="img">
+                <source srcset="./images/teamcard1/team1-1200.webp 1x, ./images/teamcard1/team1-1200-2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/teamcard1/team1-768.webp 1x, ./images/teamcard1/team1-768-2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/teamcard1/team1-480.webp 1x, ./images/teamcard1/team1-480-2x.webp 2x" type="image/webp">
+                <source srcset="./images/teamcard1/team1-1200.jpg 1x, ./images/teamcard1/team1-1200-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/teamcard1/team1-768.jpg 1x, ./images/teamcard1/team1-768-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/teamcard1/team1-480.jpg 1x, ./images/teamcard1/team1-480-2x.jpg 2x">
+                <img class="img" src="./images/teamcard1/team1-1200.jpg" alt="Игорь Демьяненко" >
               </picture>
 
               
@@ -289,11 +311,18 @@
             </li>
 
             <li class="team-list-item">
-              <img
-                class="img"
-                src="./images/olga.jpg"
-                alt="Frontend Developer Ольга Репина"
-              />
+              <picture class="img">
+                <source srcset="./images/teamcard2/team2-1200.webp 1x, ./images/teamcard2/team2-1200-2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/teamcard2/team2-768.webp 1x, ./images/teamcard2/team2-768-2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/teamcard2/team2-480.webp 1x, ./images/teamcard2/team2-480-2x.webp 2x" type="image/webp">
+                <source srcset="./images/teamcard2/team2-1200.jpg 1x, ./images/teamcard2/team2-1200-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/teamcard2/team2-768.jpg 1x, ./images/teamcard2/team2-768-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/teamcard2/team2-480.jpg 1x, ./images/teamcard2/team2-480-2x.jpg 2x">
+                <img class="img" src="./images/teamcard2/team2-1200.jpg" alt="Ольга Репина" >
+              </picture>
+
               <h3 class="team-list-header">Ольга Репина</h3>
               <p class="team-list-position" lang="en">Frontend Developer</p>
               <ul class="list social-icons-list">
@@ -353,11 +382,18 @@
             </li>
 
             <li class="team-list-item">
-              <img
-                class="img"
-                src="./images/nikolay.jpg"
-                alt="Маркетолог Николай Тарасов"
-              />
+              <picture class="img">
+                <source srcset="./images/teamcard3/team3-1200.webp 1x, ./images/teamcard3/team3-1200-2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/teamcard3/team3-768.webp 1x, ./images/teamcard3/team3-768-2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/teamcard3/team3-480.webp 1x, ./images/teamcard3/team3-480-2x.webp 2x" type="image/webp">
+                <source srcset="./images/teamcard3/team3-1200.jpg 1x, ./images/teamcard3/team3-1200-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/teamcard3/team3-768.jpg 1x, ./images/teamcard3/team3-768-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/teamcard3/team3-480.jpg 1x, ./images/teamcard3/team3-480-2x.jpg 2x">
+                <img class="img" src="./images/teamcard3/team3-1200.jpg" alt="Николай Тарасов" >
+              </picture>
+
               <h3 class="team-list-header">Николай Тарасов</h3>
               <p class="team-list-position" lang="en">Marketing</p>
               <ul class="list social-icons-list">
@@ -417,11 +453,18 @@
             </li>
 
             <li class="team-list-item">
-              <img
-                class="img"
-                src="./images/mikhail.jpg"
-                alt="UI дизайнер Михаил Ермаков"
-              />
+              <picture class="img">
+                <source srcset="./images/teamcard4/team4-1200.webp 1x, ./images/teamcard4/team4-1200-2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/teamcard4/team4-768.webp 1x, ./images/teamcard4/team4-768-2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/teamcard4/team4-480.webp 1x, ./images/teamcard4/team4-480-2x.webp 2x" type="image/webp">
+                <source srcset="./images/teamcard4/team4-1200.jpg 1x, ./images/teamcard4/team4-1200-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/teamcard4/team4-768.jpg 1x, ./images/teamcard4/team4-768-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/teamcard4/team4-480.jpg 1x, ./images/teamcard4/team4-480-2x.jpg 2x">
+                <img class="img" src="./images/teamcard4/team4-1200.jpg" alt="Михаил Ермаков" >
+              </picture>
+
               <h3 class="team-list-header">Михаил Ермаков</h3>
               <p class="team-list-position" lang="en">UI Designer</p>
               <ul class="list social-icons-list">
